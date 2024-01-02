@@ -21,3 +21,10 @@ const longestString = (str) => {
 }
 
 console.log(longestString("i am a developer jhjjhhhhbhhkhbkhhbkh"));
+ 
+const longestStr = (str) => {
+    return str.split(" ").sort((a, b) => b.length - a.length).join(" ");
+}
+
+console.log(longestStr("i am a akash"));
+

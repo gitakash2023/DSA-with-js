@@ -1,3 +1,4 @@
+//  using loop
 const sortedArrWithUniqueEle = (arr)=>{
     let uniqueArr=[]
     for(let i=0;i<arr.length;i++){
@@ -19,3 +20,13 @@ const sortedArrWithUniqueEle = (arr)=>{
     
 }
 console.log(sortedArrWithUniqueEle([1,3,2,5,2,3,4,5]))
+
+
+
+//   using methods 
+const uniqueAndSorted=(arr)=>{
+    return [...new Set(arr)].sort((a,b)=>a-b)
+
+
+}
+console.log(uniqueAndSorted([5,2,2,3,3,4,11]))

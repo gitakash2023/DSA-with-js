@@ -21,3 +21,16 @@ const reverseSentence = (str)=>{
 console.log(reverseSentence("i am a developer"))
 console.log(reverseSentence("what are you doing"))
 console.log(reverseSentence())
+//  using method
+const revesedSentece=(str)=>{
+    if (typeof str !== "string") {
+     
+        return "Input is not a string!"
+    }
+   if(str ==""){
+    return "enter a string"
+   }
+  return    str.split(" ").reverse().join(" ")
+
+}
+console.log(revesedSentece("i am a developer"))

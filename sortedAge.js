@@ -9,7 +9,7 @@ const arrayOfObjects =[
     },
      {
         name:"vidit",
-        age:25
+        age:50
     },
      {
         name:"ramjane",
@@ -39,3 +39,9 @@ const arrayOfObjects =[
         
     }
     console.log(sortedAge(arrayOfObjects))
+    //  using method 
+    const sortedAgeofArr=(arr)=>{
+       return   arr.filter(item=>item.age>40).map(item=>item.age).sort((a,b)=>b-a)
+
+    }
+    console.log(sortedAgeofArr(arrayOfObjects))

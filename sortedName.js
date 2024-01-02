@@ -35,3 +35,12 @@ const arrayOfObjects =[
 
     }
     console.log(sortedName(arrayOfObjects))
+
+    //  using method 
+    const sortByName = (arr) => {
+        return arr.map(item => item.name).sort((a, b) => a.localeCompare(b));
+    }
+    
+ 
+    console.log(sortByName(arrayOfObjects));
+    

@@ -24,3 +24,16 @@ console.log(isPlaindrom(""))
 console.log(isPlaindrom(126))
 console.log(isPlaindrom("aka"))
 console.log(isPlaindrom("akash"))
+//  using mrthod 
+const checkPalindrom=(str)=>{
+   let reverseString= str.split("").reverse().join("")
+   
+   if(str===reverseString){
+    return true
+   }else{
+    return false
+   }
+
+
+}
+console.log(checkPalindrom("aka"))

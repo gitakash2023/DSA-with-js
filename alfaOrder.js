@@ -12,3 +12,9 @@ const alfabeticalOrder = (arr)=>{
     
 }
 console.log(alfabeticalOrder(myArr))
+// using method 
+const alfaOrderName=(arr)=>{
+    return arr.sort((a,b)=>a.localeCompare(b))
+
+}
+console.log(alfaOrderName(myArr))
