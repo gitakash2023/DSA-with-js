@@ -18,3 +18,8 @@ const revStr=(str)=>{
 return reverseString.join(" ")
 }
 console.log(revStr("akash"))
+//  using method
+const rev = (str)=>{
+    return str.split("").reverse().join("")
+}
+console.log(rev("akashkumar"))

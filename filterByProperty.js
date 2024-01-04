@@ -28,3 +28,11 @@ const filterNameByLength = (arr) => {
   return newArr;
 };
 console.log(filterNameByLength(arrayOfObjects));
+
+//   using methods
+const filterNameWithCondition = (arr)=>{
+   return arr.filter(item=>item.name.length>4).map(item=>item.name)
+
+}
+console.log(filterNameWithCondition(arrayOfObjects));
+

@@ -1,4 +1,10 @@
 //  Using  sort function 
+const maxElementt = (arr) => {
+    return Math.max(...arr);
+  }
+  
+  console.log(maxElementt([1, 3, 5, 71, 2]));
+  
 
 const maxEle = (arr)=>{
     arr.sort((a,b)=>b-a)
