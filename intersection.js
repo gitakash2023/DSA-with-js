@@ -9,23 +9,5 @@ const intersection=(arr1,arr2)=>{
     }
  return commonEle
 }
-console.log(intersection([1,2,3],[3,5,1]))
+console.log(intersection([1,3,3],[4,5]))
 
-//  
-const intersectionOfArr = (array1, array2) => {
-    let mergedArr = [...array1, ...array2];
-    let n = mergedArr.length;
-    let common = [];
-
-    for (let i = 0; i < n; i++) {
-        for (let j = i + 1; j < n; j++) {
-            if (mergedArr[i] === mergedArr[j]) {
-                common.push(mergedArr[i]);
-            }
-        }
-    }
-
-    return common;
-};
-
-console.log(intersectionOfArr([1, 2, 3, 5], [3, 5, 1, 2]));
